@@ -1,8 +1,8 @@
 FROM ghcr.io/mhsanaei/3x-ui:latest
 
 # ---- Auto-setup scripts ----
-COPY scripts/entrypoint-wrapper.sh /app/entrypoint-wrapper.sh
-COPY scripts/setup-inbound.sh /app/setup-inbound.sh
+COPY entrypoint-wrapper.sh /app/entrypoint-wrapper.sh
+COPY setup-inbound.sh /app/setup-inbound.sh
 
 RUN chmod +x /app/entrypoint-wrapper.sh /app/setup-inbound.sh
 
